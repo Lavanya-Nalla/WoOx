@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --main-color: #22b3c1;
+  --main-light-color: #fff;
+  --main-dark-color:lightgray;
+}
+/* nav-start */
+.navbar {
+  background-color: var(--main-color);
+  padding: 8px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  margin-inline: 20px;
+  color: var(--main-light-color);
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active::after {
+  width: 20px;
+  height: 2px;
+  background-color: var(--main-light-color);
+  position: absolute;
+  content: '';
+  margin: -2px -45px;
+}
+
+.navbar .navbar-brand {
+  color: var(--main-light-color);
+}
+/* nav-end */
+/* hero-start */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.carosel-text h1 {
+font-weight: bold;
+font-size: 3rem;
+
+}
+.carosel-text .btn1 {
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+  border-radius: 50px;
+  padding: 10px 25px;
+  margin-top: 30px;
+}
+.carousel-item .add-dada{
+background-color: var(--main-light-color);
+border-radius: 50px;
+padding: 30px 60px;
+margin-top: 50px;
+color: var(--main-color);
+}
+.carosel-text p{
+  font-size: 1.20rem;
+  margin-top: 100px;
+}
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 40%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-controls button {
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 40px;
+  left: -200px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-indicators button {
+  width: 150px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: var(--main-light-color);
+  cursor: pointer;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 5px;
+}
+
+.carousel-indicators button.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 0;
+  background-color: var(--main-color);
+  animation: loading 3s;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+.carosel-text {
+  color: var(--main-light-color);
+  text-align: center;
+}
+
+
+.bg-color-01 {
+  background-image: url("/img/img6.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.bg-color-02 {
+  background-image: url("/img/img17.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.bg-color-03 {
+  background-image: url("/img/img6.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.bg-color-04 {
+  background-image: url("/img/img17.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.add-dada .circle-dada i{
+font-size: 3.20rem;
+float: left;
+margin:1px 20px;
+}
+.add-dada .circle-dada p{
+  margin:13px 11px;
+  color: gray;
+}
+.add-dada .circle-dada h4{
+  margin: -10px 0px;
+  font-weight: bold;
+  font-size: 1.20rem;
+}
+.circle-dada1{
+  float: left;
+}
+.circle-btn .btn{
+  background-color: var(--main-color);
+  color: var(--main-light-color);
+  padding: 10px 20px;
+  border: none;
+  float: right;
+}
+/* hero-end */
+/* visit-section-start */
+#Visit h2{
+font-weight: bold;
+}
+#Visit p{
+color: gray;
+}
+#Visit .main-img img{
+width: 100%;
+border-radius: 10px;
+height: 40vh;
+}
+#Visit .main-text h5{
+font-weight: bold;
+}
+#Visit .main-text h6{
+  color:gray;
+}
+#Visit .main-text .btn{
+  background-color: var(--main-color);
+  color: var(--main-light-color);
+  padding: 10px 20px;
+  border: none;
+  float: right;
+  margin-top :-60px;
+}
+
+#Visit .main-text .icon-box{
+border-top: 1px solid var(--main-dark-color);
+border-bottom: 1px solid var(--main-dark-color);
+border-left: none;
+border-right: none;
+padding: 10px 0px 10px 0px;
+}
+#Visit .main-text .icon-box i{
+  color:var(--main-dark-color);
+  float: left;
+  font-size: 1.30rem;
+}
+#Visit .main-text .icon-box h6{
+  font-size: 0.95rem;
+  margin-top: 7px;
+}
+.arrow{
+color: var(--main-color) !important;
+font-weight: 600;
+font-size: 0.90rem;
+text-decoration: none;
+}
+
+.page-link{
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: bold;
+}
+.page-link:hover{
+  color: var(--main-light-color);
+  background-color: var(--main-color);
+}
+.page-link:active{
+  color: var(--main-light-color);
+  background-color: var(--main-color);
+}
+/* visit-section-end */
+#Travel-Footer{
+  background-image: url(/img/cta-bg.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 75px 0px;
+    margin-top: 50px;
+}
+/* ravel-Footer-start */
+#Travel-Footer h2{
+font-size: 2.50rem;
+    color: var(--main-light-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  font-weight: bold;
+  }
+  #Travel-Footer .border-box a{
+    border: 1px solid var(--main-light-color);
+    color: var(--main-light-color);
+    text-decoration: none;
+    padding:12px 30px;
+    border-radius: 50px;
+    float: right;
+  }
+  footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 25px 0px;
+    color: var(--main-light-color);
+}
+footer p a{
+  text-decoration: none;
+  color: var(--main-light-color);
+}
+
+@media (max-width: 320px) {
+.iframe{
+width: 350px;
+}
+.carousel {
+  height: 112vh;
+}
+#Visit .main-text .btn {
+  padding: 8px 16px;
+  margin-top: -51px;
+}
+.add-dada .circle-dada i {
+  font-size: 1.20rem;
+}
+.circle-btn .btn {
+  margin-top: 25px;
+}
+.carousel-item .add-dada {
+  padding: 15px 15px;
+  margin-top: 10px;
+}
+.add-dada .circle-dada h4 {
+  font-size: 1rem;
+}
+.circle-btn .btn {
+  float: left;
+  padding: 6px 15px;
+  margin-left: 20px;
+}
+.carosel-text p {
+margin-top: 70px;
+}
+#Travel-Footer .border-box a {
+  float: left;
+}
+}
+/* ravel-Footer-end */
